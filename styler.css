@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Nav Bar */
+.mylogo {
+  font-family: Snell Roundhand, cursive;
+  font-style: italic;
+}
+.bg-light {
+    background-color: #b1c2c2 !important;
+    /*background-color: #7e9a9a !important;*/
+    height: 75px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  padding-right: 50px;
+}
+
+.nav-item:active{
+    font-weight: bold;
+}
+
+body{
+    background-color: white;
+}
+
+h1{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+}
+
+/* Image Grid */
+.portfolio {
+  column-count: 3;
+  column-gap: 1em;
+  margin: 10px;
+  /*display: grid;*/
+  /*grid-template: auto auto auto auto auto / 1fr 1fr 1fr;*/
+  /*grid-column-gap: 10px;*/
+  /*grid-row-gap: 10px;*/
+}
+
+.image img {
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  border: 2px solid #7e9a9a;
+}
+
+/*about me page*/
+.abtpage {
+  column-count: 2;
+  column-gap: 10px;
+  margin: 10px 80px;
+}
+
+.mypic {
+  float: right;
+  margin-right: 65px;
+  margin-top: 65px;
+  border: 5px solid black;
+}
+
+
+/*review page*/
+.revpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-container {
+  width: 1000px;
+  display: flex;
+  background-color: #e8e3e2;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rev {
+  padding: 10px;
+  border: 4px solid #3f4d4d;
+  margin: 10px 50px;
+  width: 800px;
+  font-size: larger;
+  text-align: center;
+  color: #3f4d4d;
+}
+
+#h1rev {
+  color: #3f4d4d;
+}
+
+/*home page*/
+.intropage {
+  background-image: url("images/background1.jpg");
+  filter: grayscale(100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.homeh1 {
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 60px;
+  color: white;
+}
+
+.sect {
+  display: flex;
+  flex-direction: row;
+  background-color: #7e9a9a;
+  align-items: stretch;
+  justify-content: space-between;
+  
+}
+
+.bw {
+  filter: grayscale(100%);
+  margin: 20px;
+  height: 280px;
+}
+
+#one {
+  background-color: #f2f5f5;
+  /*background-color: #cbd6d6;*/
+}
+
+#two {
+  background-color: #cbd6d6;
+}
+
+#three {
+  background-color: #e5eaea;
+}
+
+#imgone {
+  margin-left: 100px;
+}
+
+#imgtwo {
+  margin-right: 100px;
+}
+
+#imgthree {
+  margin-left: 100px;
+}
+
+p {
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.p1 {
+  margin-left: 180px;
+  width: 400px;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.p2{
+  font-size: 40px;
+  padding: 50px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  
+  .abtpage {
+    column-count: 1;
+  }
+  
+  .mypic {
+    width: 75%;
+  }
+  
+  .home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .sect {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+  }
+  
+  .homeh1 {
+    font-size: 30px;
+  }
+  
+  .p0 {
+    padding: 10px;
+    font-size: smaller;
+  }
+  
+  .p2 {
+    font-size: 30px;
+  }
+  
+  .bw {
+    margin: 10px auto;
+  }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .abtpage {
+    column-count: 1;
+  }
+  
+  .mypic {
+    width: 75%;
+  }
+  
+  .home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .sect {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+  }
+  
+  .homeh1 {
+    font-size: 40px;
+  }
+  
+  .p0 {
+    padding: 10px;
+    font-size: smaller;
+  }
+  
+  .p2 {
+    font-size: 30px;
+  }
+  
+  .bw {
+    margin: 10px auto;
+  }
+  
+  
